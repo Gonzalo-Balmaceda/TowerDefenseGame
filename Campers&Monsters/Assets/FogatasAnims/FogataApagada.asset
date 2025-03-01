@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: FogataApagada
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -855298285791758126, guid: 2bec7f4e20c14764d84f26309e4e224b, type: 3}
+  - {fileID: 9180251791023625898, guid: 2bec7f4e20c14764d84f26309e4e224b, type: 3}
+  - {fileID: -549789443665989942, guid: 2bec7f4e20c14764d84f26309e4e224b, type: 3}
+  - {fileID: -5167413608083449488, guid: 2bec7f4e20c14764d84f26309e4e224b, type: 3}
+  - {fileID: -8408763834710030297, guid: 2bec7f4e20c14764d84f26309e4e224b, type: 3}
+  - {fileID: 1144234645273286238, guid: 2bec7f4e20c14764d84f26309e4e224b, type: 3}
+  m_MinSpeed: 1
+  m_MaxSpeed: 1
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0

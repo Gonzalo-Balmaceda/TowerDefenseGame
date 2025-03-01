@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: FogataEncendida
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 6937817954938267909, guid: 0438ee7a43757f7428daf0e2c20288fc, type: 3}
+  - {fileID: 3191122964850554743, guid: 0438ee7a43757f7428daf0e2c20288fc, type: 3}
+  - {fileID: 5382512944479897801, guid: 0438ee7a43757f7428daf0e2c20288fc, type: 3}
+  - {fileID: -5515383189529662604, guid: 0438ee7a43757f7428daf0e2c20288fc, type: 3}
+  - {fileID: -3926759211464601419, guid: 0438ee7a43757f7428daf0e2c20288fc, type: 3}
+  - {fileID: -4424780041397978121, guid: 0438ee7a43757f7428daf0e2c20288fc, type: 3}
+  m_MinSpeed: 1
+  m_MaxSpeed: 1
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0
