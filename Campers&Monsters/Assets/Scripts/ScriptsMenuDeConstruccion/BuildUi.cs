@@ -32,10 +32,4 @@ public class BuildUI : MonoBehaviour
         BuildManager.Instance.BuildTower(BuildManager.Instance.archerTowerPrefab);
         Hide();
     }
-
-    public void BuildMage()
-    {
-        BuildManager.Instance.BuildTower(BuildManager.Instance.mageTowerPrefab);
-        Hide();
-    }
 }

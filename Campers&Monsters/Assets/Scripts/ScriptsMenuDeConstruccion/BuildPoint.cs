@@ -7,5 +7,6 @@ public class BuildPoint : MonoBehaviour
         Debug.Log("Punto de construcción seleccionado: " + gameObject.name);
         // Mostrar el menú de construcción
         BuildManager.Instance.SelectBuildPoint(this);
+        BuildUI.Instance.SetTarget(this); // Abre el menú de construcción.
     }
 }
