@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,10 +131,10 @@ TextureImporter:
       name: D_Walk_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 9
-        width: 21
-        height: 24
+        x: 13
+        y: 10
+        width: 19
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,10 +153,10 @@ TextureImporter:
       name: D_Walk_1
       rect:
         serializedVersion: 2
-        x: 60
-        y: 10
-        width: 21
-        height: 24
+        x: 61
+        y: 11
+        width: 19
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +175,10 @@ TextureImporter:
       name: D_Walk_2
       rect:
         serializedVersion: 2
-        x: 108
-        y: 8
-        width: 21
-        height: 25
+        x: 109
+        y: 9
+        width: 19
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: D_Walk_3
       rect:
         serializedVersion: 2
-        x: 156
-        y: 9
-        width: 22
-        height: 24
+        x: 157
+        y: 10
+        width: 20
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,10 +219,10 @@ TextureImporter:
       name: D_Walk_4
       rect:
         serializedVersion: 2
-        x: 205
-        y: 10
-        width: 21
-        height: 24
+        x: 206
+        y: 11
+        width: 19
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +241,10 @@ TextureImporter:
       name: D_Walk_5
       rect:
         serializedVersion: 2
-        x: 252
-        y: 8
-        width: 22
-        height: 25
+        x: 253
+        y: 9
+        width: 20
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0c8a114f5d3f0d0478f965a7192871fc
     internalID: 0
     vertices: []
     indices: 
@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      D_Walk_0: 6808733625049879353
+      D_Walk_1: 2958005836100429432
+      D_Walk_2: -1961275858478782969
+      D_Walk_3: 5229588018383845667
+      D_Walk_4: 833268405067969473
+      D_Walk_5: -2797495979863899995
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
