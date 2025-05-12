@@ -8,6 +8,7 @@ public class EnemyController : MonoBehaviour
 {
     [Header("Movement")]
     public List<Transform> wayPoints = new List<Transform>(); // Creamos una lista para los way points.
+    private int waypointIndex = 0; // Variable para el índice del waypoint.
     private int targetIndex = 1;
     public float speed = 4F;
     public float rotationSpeed = 6F;
@@ -62,7 +63,7 @@ public class EnemyController : MonoBehaviour
         Movement();
         //canvasRoot.transform.rotation = initLifeRotation; // Hacemos que se mantenga el canvas de la vida en la misma posición que la del inicio.
 
-        //LookAt();
+        LookAt();
 
         /*if (Input.GetKeyDown(KeyCode.Space)) // Codigo temporal para testear con el espacio la animación de daño.
         {
@@ -85,7 +86,7 @@ public class EnemyController : MonoBehaviour
 
         if (distance <= 0.1F)
         {
-            if (targetIndex >= wayPoints.Count-1) // wayPoint.Count-1 = 11
+            if (targetIndex >= wayPoints.Count-1)
             {
                 return; // Cortamos la ejecución del código para que no se lance un error.
             }
@@ -95,16 +96,25 @@ public class EnemyController : MonoBehaviour
 
     public void LookAt()
     {
-        // Rotamos al enemigo para que mire hacia la dirección del proximo way point. (Forma 1)
-        //transform.LookAt(wayPoints[targetIndex]);
+        if (waypointIndex < wayPoints.Count)
+        {
+            Vector3 direction = wayPoints[waypointIndex].position - transform.position;
+            transform.position += direction.normalized * speed * Time.deltaTime;
 
-        // Rotamos hacia la dirección del próximo way point pero de una manera mas suavizada. (Forma 2)
-        // 1- Obtener dirección.
-        var direction = wayPoints[targetIndex].position - transform.position;
-        // 2- Obtener rotación según la dirección.
-        var rootTarget = Quaternion.LookRotation(direction);
-        // 3- Hacemos la rotación suavizada.
-        transform.rotation = Quaternion.Slerp(transform.rotation, rootTarget, rotationSpeed * Time.deltaTime);
+            float angle = Mathf.Atan2(0, direction.x) * Mathf.Rad2Deg;
+
+            transform.rotation = Quaternion.Euler(0, 180, angle); // Esto rota el objeto 2D hacia el waypoint
+
+            if (direction.magnitude < 0.1f)
+            {
+                waypointIndex++;
+
+                if (waypointIndex >= wayPoints.Count)
+                {
+                    Destroy(gameObject);
+                }
+            }
+        }
     }
     #endregion
 
