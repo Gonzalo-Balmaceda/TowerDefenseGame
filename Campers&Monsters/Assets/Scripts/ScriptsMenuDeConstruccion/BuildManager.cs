@@ -31,3 +31,4 @@ public class BuildManager : MonoBehaviour
         selectedBuildPoint = null;
     }
 }
+
